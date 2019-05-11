@@ -13,14 +13,14 @@ namespace bibliotekaGier
 {
     public partial class MainForm : Form
     {
-        private List<Game> _gamesList;
+        Library lib;
 
         public MainForm()
         {
             InitializeComponent();
-            _gamesList = new List<Game>();
+            lib = new Library();
+            Update();
         }
-
         private void addButton_Click(object sender, EventArgs e)
         {
             NewGameForm newGameForm = new NewGameForm();
@@ -30,6 +30,13 @@ namespace bibliotekaGier
         private void deleteButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Update()
+        {
+                lib.ImportFromFile();
+                List<Game> GamesList = lib.GetGame();
+                gamesListBox.Text = GamesList.ToString();
         }
     }
 }

@@ -1,25 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace bibliotekaGier.Model
 {
-    class Game
+    class Game : LibraryObject
     {
         public string Title { get; set; }
-        public decimal Price { get; set; }
-        public string Description { get; set; }
-        public string Age { get; set; }
+        public int MinimumAge { get; set; }
 
-        public Game(string Title, decimal Price, string Description, string Age)
+        public Game(string Title, decimal Price, string Description, int Age) : base(Price, Description)
         {
             this.Title = Title;
             this.Price = Price;
             this.Description = Description;
-            this.Age = Age;
+            this.MinimumAge = Age;
         }
 
+
+        public override string ToString()
+        {
+            return Title;
+        }
+
+        public void SaveToFile()
+        {
+            using (var x = new StreamWriter(@"D:\GamesLibrary-master\lib.txt", true))
+            {
+                x.WriteLine("{0}|{1}|{2}|{3}", Title, MinimumAge, Price, Description);
+            }
+        }
     }
 }

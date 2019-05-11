@@ -10,3 +10,15 @@ C:\Users\Gim_Lic\source\repos\bibliotekaGier\bibliotekaGier\obj\Debug\biblioteka
 C:\Users\Gim_Lic\source\repos\bibliotekaGier\bibliotekaGier\obj\Debug\bibliotekaGier.pdb
 C:\Users\Gim_Lic\source\repos\bibliotekaGier\bibliotekaGier\obj\Debug\bibliotekaGier.MainForm.resources
 C:\Users\Gim_Lic\source\repos\bibliotekaGier\bibliotekaGier\obj\Debug\bibliotekaGier.NewGameForm.resources
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\GamesLibrary.csprojAssemblyReference.cache
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\bibliotekaGier.exe
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\bibliotekaGier.pdb
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\bibliotekaGier.LoginForm.resources
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\bibliotekaGier.MainForm.resources
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\bibliotekaGier.NewGameForm.resources
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\bibliotekaGier.Properties.Resources.resources
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\GamesLibrary.csproj.GenerateResource.cache
+D:\GamesLibrary-master\bibliotekaGier\obj\Debug\GamesLibrary.csproj.CoreCompileInputs.cache
+D:\GamesLibrary-master\bibliotekaGier\bin\Debug\bibliotekaGier.exe.config
+D:\GamesLibrary-master\bibliotekaGier\bin\Debug\bibliotekaGier.exe
+D:\GamesLibrary-master\bibliotekaGier\bin\Debug\bibliotekaGier.pdb

@@ -23,8 +23,9 @@ namespace bibliotekaGier
             string title = titleTextBox.Text;
             decimal price = decimal.Parse(priceTextBox.Text);
             string description = descriptionTextBox.Text;
-            string age = ageTextBox.Text;
+            int age = int.Parse(ageTextBox.Text);
             Game game = new Game(title, price, description, age);
+            game.SaveToFile();
             this.Hide();
         }
 
