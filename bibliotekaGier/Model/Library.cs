@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bibliotekaGier.Model
 {
-    class Library
+    public class Library
     {
         public List <Game> Games { get; private set; }
 
@@ -30,7 +30,7 @@ namespace bibliotekaGier.Model
             Games.Remove(game);
         }
 
-        public List<Game> GetGame()
+        public List<Game> GetGames()
         {
             return Games;
         }

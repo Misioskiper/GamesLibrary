@@ -83,6 +83,7 @@
             this.Controls.Add(this.gamesListBox);
             this.Name = "MainForm";
             this.Text = "Biblioteka gier";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,20 +13,32 @@ namespace bibliotekaGier
 {
     public partial class NewGameForm : Form
     {
-        public NewGameForm()
+        public Library Library { get; set; }
+
+        public NewGameForm(Library lib)
         {
             InitializeComponent();
+            Library = lib;
         }
 
         private void saveGameButton_Click(object sender, EventArgs e)
         {
-            string title = titleTextBox.Text;
-            decimal price = decimal.Parse(priceTextBox.Text);
-            string description = descriptionTextBox.Text;
-            int age = int.Parse(ageTextBox.Text);
-            Game game = new Game(title, price, description, age);
-            game.SaveToFile();
-            this.Hide();
+            try
+            {
+                //TODO1
+                string gameTitle = titleTextBox.Text;
+                decimal gamePrice = decimal.Parse(priceTextBox.Text);
+                string gameDescription = descriptionTextBox.Text;
+                int gameAge = int.Parse(ageTextBox.Text);
+                Game game = new Game(gameTitle, gamePrice, gameDescription, gameAge);
+                Library.AddGame(game);
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                //TODO2
+                MessageBox.Show("Coś poszło nie tak", "OK", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void clearFormButton_Click(object sender, EventArgs e)

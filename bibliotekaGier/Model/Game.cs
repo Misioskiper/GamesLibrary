@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bibliotekaGier.Model
 {
-    class Game : LibraryObject
+    public class Game : LibraryObject
     {
         public string Title { get; set; }
         public int MinimumAge { get; set; }
@@ -23,7 +23,8 @@ namespace bibliotekaGier.Model
 
         public override string ToString()
         {
-            return Title;
+            string positionDescription = $"Tytuł: {Title} Opis: {Description} PEGI: {MinimumAge} Cena: {Price}";
+            return positionDescription;
         }
 
         public void SaveToFile()

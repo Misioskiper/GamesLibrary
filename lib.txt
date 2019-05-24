@@ -1,2 +1,1 @@
-a|6|6|opis
-a|4|6|opis
+AAA|8|34|OOOOO
